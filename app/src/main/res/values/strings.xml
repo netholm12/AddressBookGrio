@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AddressBook</string>
+
+
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+
+    <string name="phone_number">Phone Number</string>
+    <string name="avatar">Avatar</string>
+
+
+    <string name="contacts_title">Contacts</string>
+    <string name="add_contact">Add New Contact</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="save_data">Save</string>
+
+    <string name="edit_contact">Edit Contact</string>
+    <string name="edit_picture">Must Take New Picture!</string>
+
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+
+    <string name="button_save_contact">Save Button</string>
+
+    <string name="search_button">Search Now</string>
+
+</resources>

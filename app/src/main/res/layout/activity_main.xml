@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.addressbookgrio.lsmacmini.addressbookgrio.MainActivity"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contactsTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_5dp"
+                android:text="@string/contacts_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:background="#444444"
+                android:paddingTop="@dimen/padding_5dp"
+                android:onClick="showAddContact"
+                android:textColor="#FFF"
+                android:text="Add"
+                android:textSize="20sp"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search by First Name.."
+                android:inputType="textVisiblePassword"/>
+
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:onClick="searchForContact"
+                android:text="@string/search_button"
+
+                />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+        </ListView>
+
+    </TableLayout>
+
+
+
+
+</RelativeLayout>
